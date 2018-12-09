@@ -7,17 +7,36 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "tops", :media => "all" %>
   </head>
 
-  <body>
-    <div class ="container">
-    <%if flash[:notice] %>
-      <p class = "text-success"><%= flash[:notice]%></p>
-      <% end %>
-    <%if flash[:alert] %>
-      <p class = "text-danger"><%= flash[:alert]%></p>
-      <% end %> 
-    <%= yield %>
-    </div>
+  <body class="text-center">
+    <div class="jumbotron">
+      <div class="col-xs-12">
+	       		 <div class="header">
+	          		<nav class="nav nav-masthead justify-content-center">
+			            <a class="nav-link active" href="#">Home</a>
+			            <a class="nav-link" href="#">Features</a>
+			            <a class="nav-link" href="#">Contact</a>
+	          		</nav>
+        		</div>
+      </div><!-- col-xs-12 -->
+      <div class ="container">
+        <%if flash[:notice] %>
+          <p class = "text-success"><%= flash[:notice]%></p>
+          <% end %>
+        <%if flash[:alert] %>
+          <p class = "text-danger"><%= flash[:alert]%></p>
+          <% end %> 
+        <%= yield %>
+      </div><!--/"container"-->
+    </div><!--"jumbotron" -->  
+    <div class="fotter">
+        <footer class="mastfoot mt-auto">
+          <div class="inner">
+            <p><small>Copyright (c) Saki All Rights Reserved.</small></p>
+          </div>
+        </footer>
+      </div><!--/"fotter" -->
   </body>
 </html>

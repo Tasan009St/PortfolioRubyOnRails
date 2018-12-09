@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  #get 'tops/show'
   get 'answers/edit'
   #get 'questions/index'
   #get 'questions/show'
@@ -7,8 +8,9 @@ Rails.application.routes.draw do
 
   #rootのURLにアクセスがあったときに、questionsコントローラーのindexアクションを実行する。
   #これを指定することで、http://localhost:3000/にアクセスしても、http://localhost:3000/questionsにアクセスしてくれる。
-  root 'questions#index'  
-  
+  #root 'questions#index'  
+  root 'tops#show' 
+
   #questionsに関連するルートを生成してくれる(#answersに関連するルートを生成してくれるよう追加)
   resources :questions do
     resources :answers
