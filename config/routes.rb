@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
+  #get 'users/new'
+  get  '/signup',  to: 'users#new'
+
   #get 'tops/show'
-  get 'answers/edit'
+  #get 'answers/edit'
   #get 'questions/index'
   #get 'questions/show'
   #get 'questions/new'
