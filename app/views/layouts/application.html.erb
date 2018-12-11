@@ -10,10 +10,10 @@
     <%= stylesheet_link_tag "tops", :media => "all" %>
   </head>
 
-  <body class="text-center">
-
+  <body>
       <div class ="container">
-        <div class="header">
+        <div class="mt-sm-2">
+          <div class="text-center">
             <nav class="nav nav-masthead justify-content-center">
                 <ul class="list-inline">
                   <li class="list-inline-item"><%= link_to 'Home', root_path%></li>
@@ -21,7 +21,8 @@
                   <li class="list-inline-item"><%= link_to 'Sign up', signup_path%></li>
                 </ul>
             </nav>
-        </div>    
+         </div><!--text center -->       
+        </div>  
         <%if flash[:notice] %>
           <p class = "text-success"><%= flash[:notice]%></p>
           <% end %>
@@ -30,12 +31,14 @@
           <% end %> 
         <%= yield %>
       </div><!--/"container"-->
-    <div class="fotter">
-        <footer class="fixed-bottom">
-          <div class="container">
-            <p><small>Copyright (c) Saki All Rights Reserved.</small></p>
-          </div>
-        </footer>
-      </div><!--/"fotter" -->
+    <div class="text-center">
+      <div class="fotter">
+          <footer class="fixed-bottom">
+            <div class="container">
+              <p><small>Copyright (c) Saki All Rights Reserved.</small></p>
+            </div>
+          </footer>
+        </div><!--/"fotter" -->
+    </div>    
   </body>
 </html>
