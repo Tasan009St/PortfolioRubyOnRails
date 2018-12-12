@@ -1,7 +1,10 @@
 # README
-ポートフォリオとして作成
-webアプリケーションの公開先
-https://qanda-portfolio-st.herokuapp.com/
+* ポートフォリオとして作成
+
+* webアプリケーションの公開先
+
+* https://qanda-portfolio-st.herokuapp.com/
+
 * Ruby version
 ruby 2.4.5
 
