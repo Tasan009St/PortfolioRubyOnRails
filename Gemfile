@@ -71,9 +71,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #version 4.4.1以上かつ4.4.Xのバージョンを利用する
-#gem 'bootstrap', '~> 4.1.1'
+gem 'bootstrap', '~> 4.1.1'
 
 #version 4.3.1以上かつ4.3.Xのバージョンを利用する
 gem 'jquery-rails', '~> 4.3.1'
 
-gem 'bootstrap-sass', '3.3.7'
+#gem 'bootstrap-sass', '3.3.#7'

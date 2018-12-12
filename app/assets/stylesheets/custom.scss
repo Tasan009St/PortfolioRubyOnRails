@@ -1,10 +1,17 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
+
+* {
+margin: 0px;
+padding: 0px;
+}
+
+
 
 /* universal */
 
-body {
-  padding-top: 60px;
+html, body{
+  margin:0px;
+  padding:0px;
 }
 
 section {
@@ -50,13 +57,19 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.7em;
   }
 
+
+.top-title{
+    margin-top: 30px;
+  }
+
+
   /* header */
 
 #logo {
     float: left;
     margin-right: 10px;
     font-size: 1.7em;
-    color: #fff;
+    color: #FFFFFF;
     text-transform: uppercase;
     letter-spacing: -1px;
     padding-top: 9px;
@@ -64,9 +77,28 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   #logo:hover {
-    color: #fff;
+    color: #777;
     text-decoration: none;
   }
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #000000; 
+}
+
+.navbar-cs>li>a{
+    color: #9d9d9d;
+}
+
+.dropdown-menu>a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
 
   .footer {
     position: fixed;
@@ -79,25 +111,33 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /*color */
-  .text-white {
-    color: #FFFFFF	
-  }
+  $white-color : #FFFFFF;
   
-  .text-black{
-    color:#000000
-  }
+  $black-color :#000000;
   
-  .text-dimgray{
-    color:#696969
-  }
+  $dimgray-color:#696969;
   
-  .text-mediumspringgreen{
-    color:#00fa9a
-  }
+  $mediumspringgreen-color:#00fa9a;
   
-  .text-lime{
-    color:#00ff00
-  }
+  $lime-color:#00ff00;
+  
+  $springgreen-color:#00ff7f;
+
+
+    /*color */
+    $white-color : #FFFFFF;
+  
+    $black-color :#000000;
+    
+  .dimgray-color{
+    color:#696969;
+  }  
+    
+    $mediumspringgreen-color:#00fa9a;
+    
+    $lime-color:#00ff00;
+    
+    $springgreen-color:#00ff7f;
   
 
   /* sidebar */
@@ -179,8 +219,10 @@ input {
 }
 
 .field_with_errors {
-  @extend .has-error;
   .form-control {
-    color: $state-danger-text;
+    color:  palevioletred;
   }
 }
+
+
+

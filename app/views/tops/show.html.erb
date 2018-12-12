@@ -1,22 +1,17 @@
-<div class="mt-sm-2">
-    <div class="text-center">
-    <nav class="nav nav-masthead justify-content-center">
-        <ul class="list-inline">
-            <li class="list-inline-item"><%= link_to 'Home', root_path%></li>
-            <li class="list-inline-item"><%= link_to 'Contact', root_path%></li>
-            <li class="list-inline-item"><%= link_to 'Sign up', signup_path%></li>
-        </ul>
-    </nav>
-    </div><!--text center -->       
-</div>
 <div class="main">
-    <div class="text-center">
-        <h1 class="cover-heading"><span class="text-muted">PORTFOLIO</span></h1>
-                <p class="lead"><span class="text-dimgray">Saki Portfolio web page.
-                    Have fun to look around the pages</span></p>
-                    
-                        <div class="btn btn-secondary">
-                            <%= link_to 'Q & A', questions_path, :class => "mt-xl-5 btn btn-secondary" %>
-                        </div>    
-    </div>    
+    <div class ="top-title">
+        <div class="text-center">
+            <h1 class="cover-heading"><span class="text-muted">PORTFOLIO</span></h1>
+                    <p class="lead"><span class="text-dimgray">Saki Portfolio web page.
+                        Have fun to look around the pages</span></p>
+                        
+                            <div class="btn btn-outline-secondary m-5">
+                                <%= link_to 'Q & A', questions_path, :class => "mt-xl-5 btn btn-outline-secondary" %>
+                            </div>    
+
+                            <div class="btn btn-outline-secondary m-5">
+                                <%= link_to 'SHOP', shop_index_path, :class => "mt-xl-5 btn btn-outline-secondary" %>
+                            </div>    
+        </div>    
+    </div>   
 </div>

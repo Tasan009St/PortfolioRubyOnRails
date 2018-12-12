@@ -2,10 +2,10 @@
     <div class ="col-md-12">
         <h3><%= @question.title %></h3>
             <div>
-                Content:<%= @question.content %>
+               <h3>Qustion: <%= @question.content %></h3>
             </div>
             <div>
-                Name:<%= @question.name %>
+                Author: <%= @question.name %>
             </div>
             <hr>
             <div>
@@ -13,7 +13,7 @@
                     <table class="table">
                         <!--answersはquestionモデルで定義した -->
                         <% if @question.answers.any? %>
-                            <thead>
+                            <thead class="thead-light">
                                 <tr class ="table-secondary">
                                     <td>Answer</td>
                                     <td>Name</td>

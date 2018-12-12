@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag "tops", :media => "all" %>
   </head>
   <body>
-      <%= render 'layouts/header' %>
+    <%= render 'layouts/header' %>
       <div class ="container">  
         <%if flash[:notice] %>
           <p class = "text-success"><%= flash[:notice]%></p>
@@ -23,6 +23,6 @@
     <div class="text-center">
         <%= render 'layouts/footer' %>
     </div> 
-    <%= debug(params) if Rails.env.development? %>   
+    <!-- <%= debug(params) if Rails.env.development? %>   -->
   </body>
 </html>

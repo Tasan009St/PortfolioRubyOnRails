@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'shop/index'
+  get 'shop/search'
   get 'sessions/new'
   get 'static_pages/home'
   get 'static_pages/help'
