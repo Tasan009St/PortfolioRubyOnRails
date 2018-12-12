@@ -1,10 +1,6 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-*webアプリケーションの公開先
+ポートフォリオとして作成
+webアプリケーションの公開先
 https://qanda-portfolio-st.herokuapp.com/
 * Ruby version
 ruby 2.4.5
