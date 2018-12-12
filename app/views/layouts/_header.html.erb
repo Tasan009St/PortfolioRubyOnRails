@@ -4,15 +4,11 @@
               <li class="list-inline-item">
                 <%= link_to "Home", root_path %>
               </li>
-              <li class="list-inline-item">
-              <%= link_to "Help",   '#' %>
-              </li>
               <% if logged_in? %>
               <li class="nav-item dropdown list-inline-item">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown">
                   <a class="dropdown-item"><%= link_to "Profile", current_user %></a>
-                  <a class="dropdown-item"><%= link_to "Settings", '#' %></a>
                   <a class="dropdown-item"><%= link_to "Log out", logout_path, method: :delete %></a>
                 </ul>
               </li>        
