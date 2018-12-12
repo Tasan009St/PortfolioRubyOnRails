@@ -9,20 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag "tops", :media => "all" %>
   </head>
-
   <body>
-      <div class ="container">
-        <div class="mt-sm-2">
-          <div class="text-center">
-            <nav class="nav nav-masthead justify-content-center">
-                <ul class="list-inline">
-                  <li class="list-inline-item"><%= link_to 'Home', root_path%></li>
-                  <li class="list-inline-item"><%= link_to 'Contact', root_path%></li>
-                  <li class="list-inline-item"><%= link_to 'Sign up', signup_path%></li>
-                </ul>
-            </nav>
-         </div><!--text center -->       
-        </div>  
+      <%= render 'layouts/header' %>
+      <div class ="container">  
         <%if flash[:notice] %>
           <p class = "text-success"><%= flash[:notice]%></p>
           <% end %>
@@ -32,13 +21,7 @@
         <%= yield %>
       </div><!--/"container"-->
     <div class="text-center">
-      <div class="fotter">
-          <footer class="fixed-bottom">
-            <div class="container">
-              <p><small>Copyright (c) Saki All Rights Reserved.</small></p>
-            </div>
-          </footer>
-        </div><!--/"fotter" -->
+        <%= render 'layouts/footer' %>
     </div>    
   </body>
 </html>
