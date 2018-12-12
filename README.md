@@ -3,7 +3,7 @@
 
 * webアプリケーションの公開先
 
-* https://qanda-portfolio-st.herokuapp.com/
+ https://qanda-portfolio-st.herokuapp.com/
 
 * Ruby version
 ruby 2.4.5
